@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Activity 2</title>
+    </head>
+    <body>
+        <h2>Scope of Variable</h2>
+        <button onclick="myfunction()">Click me</button>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <script>
+            //global variable
+            var a=10;
+            function myfunction(){
+                //local variable
+                var b=20;
+                document.getElementById("p1").innerHTML="Value of b inside function is " +b;
+                document.getElementById("p2").innerHTML = "Value of a inside function is" + a;
+            }
+            document.getElementById("p4").innerHTML="Value of a outside function is " +a;
+        </script>
+    </body>
+</html>
